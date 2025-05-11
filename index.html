@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.3.1/dist/css/themes/bootstrap/bootstrap.min.css" rel="stylesheet" integrity="sha384-leftDVIOA1OKkBjlGo3RtR+u4nHJPna0xV0zW3hSS3Os38Y84NF5bYB8/hOnHbfj" crossorigin="anonymous">  
+    <link rel="stylesheet" href="./assets/css/libs/fontawesome.min.css">
+    <link rel="stylesheet" href="./assets/css/libs/fullcalendar_5.10.1.min.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+  </head>
+  <body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1">
+                <div class="vertical_navigation">
+                    <ul>
+                        <li><img src="./assets/imgs/Logo.svg"></li>
+                        <li><img src="./assets/imgs/home.svg"></li>
+                        <li><img src="./assets/imgs/blocks.svg"></li>
+                        <li><img src="./assets/imgs/options.svg"></li>
+                        <li><img src="./assets/imgs/tree.svg"></li>
+                        <li><img src="./assets/imgs/card.svg"></li>
+        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-11 col-xs-12">
+                <div class="main_content">
+                    <div class="horizontal-header">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-8">  
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Search">
+                                </div>
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option value ="English" selected>English</option>
+                                                <option value="Arabic">Arabic</option>
+                                            </select>
+                                            
+                                        </div>
+                                        <div class="col">col-2</div>
+                                        <div class="col">col-3</div>
+                                        <div class="col">col-4</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="personal-sec">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <img src="./assets/imgs/avatar.png">
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="greetings">
+                                        <h4>Good Morning , Ali </h4>
+                                        <h6>Lets have a productive day 😊</h6>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6"></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-section">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div id="carouselExampleCaptions" class="carousel slide">
+                                    <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                    <div class="carousel-item  active">
+                                        <!--<img src="..." class="d-block w-100" alt="..."> -->
+                                        <div class="caption flex-column h-100 d-flex align-items-center justify-content-center">
+                                        <h1>Advertise One </h1>
+                                        <p>Empowering businesses with innovative design solutions – ADIO, where creativity meets strategy.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <!--<img src="..." class="d-block w-100" alt="..."> -->
+                                        <div class="caption flex-column h-100 d-flex align-items-center justify-content-center">
+                                        <h1>Advertise One </h1>
+                                        <p>Empowering businesses with innovative design solutions – ADIO, where creativity meets strategy.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <!--<img src="..." class="d-block w-100" alt="..."> -->
+                                        <div class="caption flex-column h-100 d-flex align-items-center justify-content-center">
+                                        <h1>Advertise One </h1>
+                                        <p>Empowering businesses with innovative design solutions – ADIO, where creativity meets strategy.</p>
+                                        </div>
+                                    </div>
+
+
+
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6 col-xs-6">
+                                <div class="calender-sec">
+                                    <h3>calender</h3>
+                                    <div id="calendar"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6">
+                                <div class="related-site">
+                                    <h3 class="default-title">Related Site</h3>
+                                    <p>
+                                        Here, you’ll find links to relevant external websites that provide additional resources and information to support your work and development.
+
+                                    </p>
+                                    <button class="btn btn-lined">Visit Site</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="container-fluid">
+                        <div class="adio-apps">
+                            <div class="row first-row">
+                                <div class="col-sm-6 col-xs-6">
+                                    <h3 class="default-title">ADIO Apps </h3>
+                                </div>
+                                <div class="col-sm-6 col-xs-6">
+                                    <a href="#" class="explore-more-btn">Explore More</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3 col-xs-3">
+                                    <div class="app-sec">
+                                        <h4>ADIO CRM</h4>
+                                    </div>                                   
+                                </div>
+                                <div class="col-sm-3 col-xs-3">
+                                    <div class="app-sec">
+                                        <h4>eApprove</h4>
+                                    </div>                                   
+                                </div>
+                                <div class="col-sm-3 col-xs-3">
+                                    <div class="app-sec">
+                                        <h4>One Hub</h4>
+                                    </div>                                   
+                                </div>
+                                <div class="col-sm-3 col-xs-3">
+                                    <div class="app-sec">
+                                        <h4>Gov ERP</h4>
+                                    </div>                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="container-fluid">
+                        <div class="it-training-sec">
+                            <div class="row first-row">
+                                <div class="col-6">
+                                    <h3 class="default-title">IT Training and Development  </h3>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="explore-more-btn">View All</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="app-sec">
+                                        <h4>ServiceHub walkthrough </h4>
+                                    </div>                                   
+                                </div>
+                                <div class="col-3">
+                                    <div class="app-sec">
+                                        <h4>ADIO Compliance</h4>
+                                    </div>                                   
+                                </div>
+                                <div class="col-3">
+                                    <div class="app-sec">
+                                        <h4>Project Management Tool</h4>
+                                    </div>                                   
+                                </div>
+                                <div class="col-3">
+                                    <div class="app-sec">
+                                        <h4>IT Training and Resources</h4>
+                                    </div>                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="container-fluid">
+                        <div class="last-news">
+                            <div id="carouselExample" class="carousel slide">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                        <div class="news-item">
+                                            <img src="./assets/imgs/Laste News.png" class="" alt="...">
+                                            <div class="news-txt">
+                                                <div class="news-head">
+                                                    <div class="news-left-txt">Last News</div>
+                                                    <div class="news-right-txt">View all</div>
+                                                </div>
+                                                <div class="news-title">
+                                                    Big News is Coming! Stay tuned and keep in touch. ✨
+                                                </div>
+                                            </div>
+                                        </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="news-item">
+                                        <img src="./assets/imgs/Laste News.png" class="" alt="...">
+                                        <div class="news-head">
+                                            <div class="news-left-txt">Last News</div>
+                                            <div class="news-right-txt">View all</div>
+                                        </div>
+                                        <div class="news-title">
+                                            Big News is Coming! Stay tuned and keep in touch. ✨
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="news-item">
+                                        <img src="./assets/imgs/Laste News.png" class="" alt="...">
+                                        <div class="news-head">
+                                            <div class="news-left-txt">Last News</div>
+                                            <div class="news-right-txt">View all</div>
+                                        </div>
+                                        <div class="news-title">
+                                            Big News is Coming! Stay tuned and keep in touch. ✨
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+
+
+
+                    
+
+
+
+
+
+                    <div>
+
+                        
+                    </div>
+
+
+                    <section class="topCommunityPicks borderedBox">
+                        <div class="container-fluid">
+                            <div class="row first-row">
+                                <div class="col-6">
+                                    <h3 class="default-title">Top Community Picks  </h3>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="explore-more-btn">View All</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="pick-item"><p>Posted in <b>All Company</b></p>
+                                        <div class="date d-flex align-items-end">
+                                            <div class="icon-container">
+                                                <img  src="./assets/imgs/ADIO__White.png" />
+                                            </div>
+                                            
+                                            <span>Today at 02:0PM</span>                                            
+                                        </div>
+                                        <h3>When She Thrives, We All Do 💗</h3>
+                                        <p class="desc">
+                                            At ADIO, we invest in more than just success —we invest in strength, vision and impact. 💡✨
+                                           <br/> By supporting women entrepreneurs and leaders, we’re not only driving business growth; we’re encouraging meaningful progress, breaking down barriers and creating a future where bold ideas find <span class="grayTXT">the space to thrive.</span> 🚀
+                                        </p>
+                                        <div class="attachment-container">
+                                            <p class="m-0"><i class="fa-solid fa-paperclip"></i> 2 Attachment </p>
+                                        </div>
+                                        
+                                        <div class="likes-container d-flex align-items-center justify-content-between">
+                                            <span>Be The First to comment </span>
+                                            <span><i class="fa-solid fa-thumbs-up"></i> 3</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="pick-item"><p>Posted in <b>All Company</b></p>
+                                        <div class="date d-flex align-items-end">
+                                            <div class="icon-container">
+                                                <img  src="./assets/imgs/ADIO__White.png" />
+                                            </div>
+                                            
+                                            <span>Today at 02:0PM</span>                                            
+                                        </div>
+                                        <h3>When She Thrives, We All Do 💗</h3>
+                                        <p class="desc">
+                                            At ADIO, we invest in more than just success —we invest in strength, vision and impact. 💡✨
+                                           <br/> By supporting women entrepreneurs and leaders, we’re not only driving business growth; we’re encouraging meaningful progress, breaking down barriers and creating a future where bold ideas find <span class="grayTXT">the space to thrive.</span> 🚀
+                                        </p>
+                                        <div class="attachment-container">
+                                            <p class="m-0"><i class="fa-solid fa-paperclip"></i> 2 Attachment </p>
+                                        </div>
+                                        
+                                        <div class="likes-container d-flex align-items-center justify-content-between">
+                                            <span>Be The First to comment </span>
+                                            <span><i class="fa-solid fa-thumbs-up"></i> 3</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-lg-4">
+                                    <div class="pick-item"><p>Posted in <b>All Company</b></p>
+                                        <div class="date d-flex align-items-end">
+                                            <div class="icon-container">
+                                                <img  src="./assets/imgs/ADIO__White.png" />
+                                            </div>
+                                            
+                                            <span>Today at 02:0PM</span>                                            
+                                        </div>
+                                        <h3>When She Thrives, We All Do 💗</h3>
+                                        <p class="desc">
+                                            At ADIO, we invest in more than just success —we invest in strength, vision and impact. 💡✨
+                                           <br/> By supporting women entrepreneurs and leaders, we’re not only driving business growth; we’re encouraging meaningful progress, breaking down barriers and creating a future where bold ideas find <span class="grayTXT">the space to thrive.</span> 🚀
+                                        </p>
+                                        <div class="attachment-container">
+                                            <p class="m-0"><i class="fa-solid fa-paperclip"></i> 2 Attachment </p>
+                                        </div>
+                                        
+                                        <div class="likes-container d-flex align-items-center justify-content-between">
+                                            <span>Be The First to comment </span>
+                                            <span><i class="fa-solid fa-thumbs-up"></i> 3</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </section>
+        
+                </div>
+
+
+                <footer class="my-5">
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="">
+                                <img class="mainLogo" src="./assets/imgs/footer-logo.png" />            
+                            </div>
+            
+                            <div class="">
+                                <ul class="d-flex align-items-center social-links-list">
+                                    <li><a href="#" title="Youtube"><img src="./assets/imgs/youtube.png" /></a></li>
+                                    <li><a href="#" title="Facebook"><img src="./assets/imgs/facebook.png" /></a></li>
+                                    <li><a href="#" title="Twitter"><img src="./assets/imgs/twitter.png" /></a></li>
+                                    <li><a href="#" title="Instgram"><img src="./assets/imgs/instgram.png" /></a></li>
+                                    <li><a href="#" title="Linkedin"><img src="./assets/imgs/linkedin.png" /></a></li>
+                                </ul>
+            
+                            </div>
+            
+                        </div>
+            
+                    </div>
+                </footer>   
+
+            </div>
+
+        </div>
+    </div>  
+    
+
+    <script src="./assets/js/libs/jquery.min.js"></script>     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-+BCVVYepeVZB2ejb1RVKb+0hoxtMs9CEjephXP6c6DV482N/m/hwq5FevVLVsETI" crossorigin="anonymous"></script>
+    <script src="./assets/js/libs/fullcalendar_5.10.1.min.js"></script>
+    <script>
+            calendarEl = $("#calendar").get(0);
+    if (calendarEl)
+    {
+      initializeCalendar();
+    }
+
+    //  Start Calendar Logic
+
+function initializeCalendar() {
+
+
+// Initialize FullCalendar
+
+calendarEl = document.getElementById('calendar');
+calendar = new FullCalendar.Calendar(calendarEl, {
+  initialView: 'dayGridMonth',
+  eventColor: '#8A1538',
+
+  
+  eventDidMount: function(info) {
+      // Attach tooltip using Tippy.js
+      tippy(info.el, {
+          content: `<h5>${info.event.title}</h5>${info.event.extendedProps.description}`,
+          allowHTML: true, // Allows HTML content in tooltips
+          theme: 'light',  // Optional: use Tippy's light theme
+          placement: 'top',
+          animation: 'scale',
+      });
+  }
+});
+
+calendar.render();
+}
+    </script>
+
+</body>
+</html>
