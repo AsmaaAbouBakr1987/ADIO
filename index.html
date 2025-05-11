@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>ADIO - HUB</title>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
         </style>
@@ -17,9 +17,9 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-1">
+            <div class="col-md-1">
                 <div class="vertical_navigation">
-                    <ul>
+                    <ul class="">
                         <li><img src="./assets/imgs/Logo.svg"></li>
                         <li><img src="./assets/imgs/home.svg"></li>
                         <li><img src="./assets/imgs/blocks.svg"></li>
@@ -31,26 +31,34 @@
                 </div>
             </div>
 
-            <div class="col-11 col-xs-12">
+            <div class="col-md-11">
                 <div class="main_content">
-                    <div class="horizontal-header">
+                    <div class="horizontal-header  py-4">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-8">  
-                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Search">
+                                <div class="col-md-8 d-flex align-items-center">  
+                                    <div class="position-relative search-box w-100">
+                                        <input type="text" class="w-100 search-input form-control px-5" placeholder="Search...">
+                                        <i class="fa fa-search position-absolute"></i>
+                                    </div>
+                                  
                                 </div>
-                                <div class="col-4">
-                                    <div class="row">
-                                        <div class="col">
+                                <div class="col-md-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
                                             <select class="form-select" aria-label="Default select example">
                                                 <option value ="English" selected>English</option>
                                                 <option value="Arabic">Arabic</option>
                                             </select>
                                             
                                         </div>
-                                        <div class="col">col-2</div>
-                                        <div class="col">col-3</div>
-                                        <div class="col">col-4</div>
+                                        <div class="col-2">
+                                            <a href="#" title="Toggle Theme" id="toggle-theme">
+                                                <i class="fa-solid fa-circle-half-stroke"></i>
+                                            </a>
+                                        </div>
+                                        <div class="col-2"><a href="#" id="notifications"><i class="fa-regular fa-bell"></i></a></div>
+                                        <div class="col-2"><a href="" id="userImg" title="user"><img src="./assets/imgs/user.jpg" /></a></div>
                                     </div>
                                 </div>
                             </div>
@@ -207,22 +215,22 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-3">
+                                <div class="col-sm-3">
                                     <div class="app-sec">
                                         <h4>ServiceHub walkthrough </h4>
                                     </div>                                   
                                 </div>
-                                <div class="col-3">
+                                <div class="col-sm-3">
                                     <div class="app-sec">
                                         <h4>ADIO Compliance</h4>
                                     </div>                                   
                                 </div>
-                                <div class="col-3">
+                                <div class="col-sm-3">
                                     <div class="app-sec">
                                         <h4>Project Management Tool</h4>
                                     </div>                                   
                                 </div>
-                                <div class="col-3">
+                                <div class="col-sm-3">
                                     <div class="app-sec">
                                         <h4>IT Training and Resources</h4>
                                     </div>                                   
@@ -400,7 +408,7 @@
 
                 <footer class="my-5">
                     <div class="container-fluid">
-                        <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-clock d-md-flex align-items-center justify-content-between">
                             <div class="">
                                 <img class="mainLogo" src="./assets/imgs/footer-logo.png" />            
                             </div>
