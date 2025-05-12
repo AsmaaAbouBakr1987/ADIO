@@ -314,3 +314,101 @@ body{
     }
 
 }
+
+/* Light & Dark toggle
+========================*/
+
+  
+/* Latest news Slider
+========================*/
+
+.last-news {
+    display: block;
+    border: solid 1px #C7C7C7;
+    border-radius: 12px;
+    padding: 16px;
+    background-color: #fff;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news-item img {
+    width: 34%;
+    border-radius: 8px;
+}
+
+.news-txt {
+    width: 65%;
+    vertical-align: top;
+    padding: 24px;
+}
+
+.news-head {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-left-txt {
+    font-size: 28px;
+    color: #A57737;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.news-right-txt a {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #2196F3;
+    font-weight: 300;
+}
+
+.news-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 45px;
+    color: #191919;
+    margin-bottom: 12px;
+    width: 75%;
+}
+
+p.news-date {
+    color: #777777;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* Hide default top-aligned Bootstrap positioning */
+.last-news .carousel-control-prev,
+.last-news .carousel-control-next {
+    position: static; 
+    width: auto;
+    margin: 0 8px;
+    opacity: 1;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container to center the arrows below */
+.last-news .carousel-controls-wrapper {
+    position: absolute;
+    bottom: 16px;
+    left: 36%;
+}
+
+/* adjust size or appearance */
+.last-news .carousel-control-prev-icon,
+.last-news .carousel-control-next-icon {
+    background-color: #DDDDDD;
+    border-radius: 6px;
+    padding: 12px;
+}
+
