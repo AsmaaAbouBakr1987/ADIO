@@ -239,6 +239,13 @@ body{
     min-width: 115px;
 }
 
+@media (min-width: 768px) 
+{
+    .vertical_navigation{
+       position: fixed;
+    }
+}
+
 .fa-search {
     top: 12px;
     left: 25px;
@@ -314,6 +321,7 @@ body{
     }
 
 }
+
 
 /* Light & Dark toggle
 ========================*/
