@@ -47,7 +47,7 @@
 }
 .app-sec {
     height: 136px;
-    background: #FBFBFB;
+    background: var(--appsec-bg);
     border-radius: 16px;
     box-shadow: 0px 1px 5px #0000001f;
     display: flex;
@@ -58,7 +58,7 @@
 }
 .app-sec h4 {
     font-family: "Roboto", sans-serif;
-    color: #191919;
+    color: var(--toppicks-txt);
     font-size: 24px;
     font-weight: 300;
 }
@@ -130,7 +130,7 @@
 }
 .attachment-container
 {
- border-bottom: 1px solid #464646;
+ border-bottom: 1px solid var(--likes-container);
  margin-bottom: 1rem;
  padding-bottom: 1rem;
  font-size: 14px;
@@ -139,7 +139,7 @@
 
 .likes-container
 {
-    color: #464646;
+    color: var(--likes-container);
     font-size: 14px;
     font-weight: 500;
 }
@@ -219,7 +219,7 @@ footer .social-links-list
 
 .vertical_navigation{
     border-inline-end: 1px solid #DDDDDD;
-    background-color: #ffffff;
+    background-color: var(--sidemenu-bg);
     height: 100%;
     margin-inline-start: -15px;
     padding-top: 21px;
@@ -290,6 +290,9 @@ a#notifications::after {
     --toppicks-txt: black;
     --toppicks-bg: #FBFBFB;
     --toppicks-date: #464646;
+    --sidemenu-bg: #fbfbfb;
+    --appsec-bg: #fbfbfb;
+    --likes-container: #464646;
  }
  
  [data-theme="dark"] {
@@ -300,6 +303,9 @@ a#notifications::after {
     --toppicks-txt: yellow;
     --toppicks-bg: purple;
     --toppicks-date: red;
+    --sidemenu-bg: #ddd;
+    --appsec-bg: #333;
+    --likes-container: yellow;
  }
  
  body {
@@ -319,7 +325,7 @@ a#notifications::after {
     border: solid 1px #C7C7C7;
     border-radius: 12px;
     padding: 16px;
-    background-color: #fff;
+    background-color: var(--appsec-bg);
 }
 
 .news-item {
@@ -365,7 +371,7 @@ a#notifications::after {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 45px;
-    color: #191919;
+    color: var(--toppicks-txt);
     margin-bottom: 12px;
     width: 75%;
 }
