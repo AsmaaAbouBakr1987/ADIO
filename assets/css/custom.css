@@ -64,7 +64,7 @@
 }
 .default-title {
     font-size: 28px;
-    color: #A57737;
+    color: var(--color-border);
     font-family: "Roboto", sans-serif;
     font-weight: 400;
 }
@@ -75,7 +75,7 @@
     text-decoration: none;
     font-size: 22px;
     text-transform: capitalize;
-    color: #2196F3;
+    color: var(--view-all-btn);
     font-weight: 300;
 }
 .first-row {
@@ -93,7 +93,8 @@
 .topCommunityPicks .pick-item
 {
 
-    background: #FBFBFB;
+    background: var(--toppicks-bg);
+    color: var(--toppicks-txt);
     border-radius: 16px;
     box-shadow: 0px 1px 5px #0000001f;
     padding: 20px;
@@ -112,7 +113,7 @@
 }
 .topCommunityPicks .pick-item .date 
 {
-    color: #464646;
+    color: var(--toppicks-date);
     font-size: 12px;
     font-weight: 500;
 }
@@ -196,22 +197,22 @@ footer .social-links-list
 
 .btn-lined
 {
-    border: 1px solid #A57737;
-    color: #A57737 !important;
+    border: 1px solid var(--color-border);
+    color: var(--color-border) !important;
     padding: 10px 40px;
     margin-top: 2rem;
 }
 
 .btn-lined:hover
 {
-    background-color: #A57737;
+    background-color: var(--color-border);
     color: #ffffff !important;
 }
 
 
-body{
+/*body{
     background-color: #fbfbfb;
-}
+}*/
 
 /* Header and Navigation
 ==========================*/
@@ -249,7 +250,7 @@ body{
  font-size: 23px;
 }
 #toggle-theme {
-    padding: 0px 15px;
+    padding: 7px 15px;
 }
 a#notifications {
     padding: 11px 15px;
@@ -282,13 +283,23 @@ a#notifications::after {
 ========================*/
 
 [data-theme="light"] {
-    --color-bg: #ffffff;
-    --color-fg: #000000;
+    --color-bg: #fbfbfb;
+    --color-fg: darkgray;
+    --color-border: #A57737;
+    --view-all-btn: #2196F3;
+    --toppicks-txt: black;
+    --toppicks-bg: #FBFBFB;
+    --toppicks-date: #464646;
  }
  
  [data-theme="dark"] {
-    --color-bg: #000000;
-    --color-fg: #ffffff;
+    --color-bg: darkgray;
+    --color-fg: #fbfbfb;
+    --color-border: blue;
+    --view-all-btn: green;
+    --toppicks-txt: yellow;
+    --toppicks-bg: purple;
+    --toppicks-date: red;
  }
  
  body {
@@ -299,17 +310,7 @@ a#notifications::after {
    place-items: center;
  }
  
- button {
-   font-size: 2rem;
-   font-weight: bold;
-   padding: 0.5rem 1rem;
-   transition: all var(--global-transition-time) ease-in-out;
-   border-radius: 2rem;
-   cursor: pointer;
-   color: var(--color-fg);
-   background-color: var(--color-bg);
-   border: 0.25rem solid var(--color-fg);
- }
+ 
 /* Latest news Slider
 ========================*/
 
@@ -346,7 +347,7 @@ a#notifications::after {
 
 .news-left-txt {
     font-size: 28px;
-    color: #A57737;
+    color: var(--color-border);
     font-family: "Roboto", sans-serif;
     font-weight: 400;
 }
@@ -356,7 +357,7 @@ a#notifications::after {
     text-decoration: none;
     font-size: 22px;
     text-transform: capitalize;
-    color: #2196F3;
+    color: var(--view-all-btn);
     font-weight: 300;
 }
 
