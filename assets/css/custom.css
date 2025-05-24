@@ -58,11 +58,20 @@
     padding: 20px;
     text-align: center;
 }
+.app-sec:hover {
+    color: var(--color-bg);
+    background: var(--color-border);
+}
 .app-sec h4 {
     font-family: "Roboto", sans-serif;
     color: var(--toppicks-txt);
     font-size: 24px;
     font-weight: 300;
+     transition: transform 0.3s ease-out;
+}
+.app-sec:hover h4 {
+    transform: scale(1.2);
+    transition: transform 0s;
 }
 .default-title {
     font-size: 28px;
