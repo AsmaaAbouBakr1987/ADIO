@@ -37,6 +37,7 @@
     border-radius: 16px;
     padding: 32px;
     margin-top: 32px;
+    background-color: var(--section-bg);
 }
 .adio-apps, .it-training-sec, .top-community-picks {
     border: solid 1px #C7C7C7;
@@ -44,6 +45,7 @@
     padding: 32px;
     margin-top: 32px;
     margin-bottom: 32px;
+    background-color: var(--section-bg);
 }
 .app-sec {
     height: 136px;
@@ -89,7 +91,9 @@
     padding: 32px;
     margin:32px auto;
 }
-
+.topCommunityPicks{
+    background-color: var(--section-bg);
+}
 .topCommunityPicks .pick-item
 {
 
@@ -293,6 +297,7 @@ a#notifications::after {
     --sidemenu-bg: #fbfbfb;
     --appsec-bg: #fbfbfb;
     --likes-container: #464646;
+    --section-bg: #fbfbfb;
  }
  
  [data-theme="dark"] {
@@ -306,6 +311,7 @@ a#notifications::after {
     --sidemenu-bg: #ddd;
     --appsec-bg: #333;
     --likes-container: yellow;
+    --section-bg: cornflowerblue;
  }
  
  body {
@@ -528,4 +534,74 @@ p.news-date {
 }
 
 
+/* Calender
+==============*/
+#calendar a {
+    color: #191919;
+    text-decoration: none;
+}
 
+ #calendar .fc-header-toolbar.fc-toolbar {
+    position: relative;  
+}
+
+#calendar .fc-header-toolbar.fc-toolbar  .fc-toolbar-chunk:nth-child(1){
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#calendar .fc-header-toolbar.fc-toolbar  .fc-toolbar-chunk:nth-child(3){
+    width: 100%;
+}
+
+#calendar .fc-today-button{
+    display: none;
+}
+
+.fc-button-group{
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fc-prev-button, .fc-next-button{
+    width: 50px;
+    flex: none !important;
+}
+
+
+
+
+.fc-theme-standard td, .fc-theme-standard th {
+    /*border: none !important;*/
+}
+.fc .fc-button-primary {
+    color: #464646;
+    background-color: #D9D9D9;
+    border: none;
+    font-size: 12px;
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+}
+span.fc-icon {
+    line-height: .6;
+}
+.fc .fc-button-primary:focus {
+    box-shadow: none;
+}
+.fc-direction-ltr .fc-button-group>.fc-button:not(:last-child) {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.fc-direction-ltr .fc-button-group>.fc-button:not(:first-child) {
+    margin-left: -1px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+h2#fc-dom-1 {
+    color: #191919;
+    font-size: 24px;
+    font-weight: 800;
+}

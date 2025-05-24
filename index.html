@@ -13,6 +13,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/libs/fullcalendar_5.10.1.min.css">
+    <!-- Tippy.js CSS (Optional: for additional styles) -->
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css" />
+
     <link rel="stylesheet" href="./assets/css/custom.css">
   </head>
   <body>
@@ -169,7 +172,7 @@
                         <div class="row">
                             <div class="col-sm-6 col-xs-6">
                                 <div class="calender-sec">
-                                    <h3>calender</h3>
+                                    <h3 class="default-title">calender</h3>
                                     <div id="calendar"></div>
                                 </div>
                             </div>
@@ -477,7 +480,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
    
     <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-+BCVVYepeVZB2ejb1RVKb+0hoxtMs9CEjephXP6c6DV482N/m/hwq5FevVLVsETI" crossorigin="anonymous"></script>
-    
+ 
     <script>
        /**
 * Utility function to calculate the current theme setting.
@@ -549,8 +552,11 @@ button.addEventListener("click", () => {
     
     
     
-    
+   <script src="https://unpkg.com/@popperjs/core@2"></script>
+   <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="./assets/js/libs/fullcalendar_5.10.1.min.js"></script>
+       
+
     <script>
             calendarEl = $("#calendar").get(0);
     if (calendarEl)
@@ -559,33 +565,65 @@ button.addEventListener("click", () => {
     }
 
     //  Start Calendar Logic
-
 function initializeCalendar() {
+ var screenSize, isArabic, calendarEl, calendar ;
+ screenSize= $( window ).width(); // get screen size
+    isArabic = $('html').attr("dir")=='rtl'? true:false;
+  var title = 'test';
+var evtDate = '30-04-2025';
+var descEvt = 'Annual business conference';
 
-
+  var lang;
+  var events = [
+    {
+        title: title,
+        start: evtDate,
+        description: descEvt
+    },
+    {
+        title: 'Team Meeting',
+        start: '2025-05-01',
+        description: 'Monthly team meeting at HQ'
+    },
+    {
+        title: 'Webinar',
+        start: '2024-06-15',
+        description: 'Webinar on JavaScript frameworks Webinar on JavaScript frameworksWebinar on JavaScript frameworksWebinar on JavaScript frameworks'
+    }
+];
+// Check for Language
+if (isArabic == true)
+{
+ lang = 'ar';
+ 
+}
+else
+{
+  lang = 'en';
+}
 // Initialize FullCalendar
 
-calendarEl = document.getElementById('calendar');
-calendar = new FullCalendar.Calendar(calendarEl, {
-  initialView: 'dayGridMonth',
-  eventColor: '#8A1538',
-
-  
-  eventDidMount: function(info) {
-      // Attach tooltip using Tippy.js
-      tippy(info.el, {
-          content: `<h5>${info.event.title}</h5>${info.event.extendedProps.description}`,
-          allowHTML: true, // Allows HTML content in tooltips
-          theme: 'light',  // Optional: use Tippy's light theme
-          placement: 'top',
-          animation: 'scale',
-      });
-  }
+ calendarEl = document.getElementById('calendar');
+ calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'dayGridMonth',
+    events: events,
+    eventColor: '#A57737',
+    locale: lang, // Arabic locale
+    
+    eventDidMount: function(info) {
+        // Attach tooltip using Tippy.js
+        tippy(info.el, {
+            content: `<h5>${info.event.title}</h5>${info.event.extendedProps.description}`,
+            allowHTML: true, // Allows HTML content in tooltips
+            theme: 'light',  // Optional: use Tippy's light theme
+            placement: 'top',
+            animation: 'scale',
+        });
+    }
 });
 
 calendar.render();
 }
     </script>
-
 </body>
 </html>
