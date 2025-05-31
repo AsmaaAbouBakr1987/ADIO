@@ -315,6 +315,8 @@ a#notifications::after {
     --icon-color: #464646;
     --input-bg: #fff;
     --input-border: #777777;
+    --notification-txt: black;
+    --notification-time-txt: #888;
  }
  
  [data-theme="dark"] {
@@ -333,6 +335,8 @@ a#notifications::after {
     --icon-color: white;
     --input-bg: grey;
     --input-border: white;
+    --notification-txt: white;
+    --notification-time-txt: white;
  }
  
  body {
@@ -631,8 +635,13 @@ h2#fc-dom-1 {
 ==================*/
 .dropdown-menu {
       width: 320px;
+      background-color: var(--input-bg);
+    }
+    h6.dropdown-header{
+        color: var(--notification-txt);
     }
     .notification-item {
+      color: var(--notification-txt);
       font-size: 0.9rem;
       padding: 10px;
       border-bottom: 1px solid #f1f1f1;
@@ -642,7 +651,7 @@ h2#fc-dom-1 {
     }
     .notif-time {
       font-size: 0.75rem;
-      color: #888;
+      color: var(--notification-time-txt);
       display: block;
       margin-top: 4px;
     }
