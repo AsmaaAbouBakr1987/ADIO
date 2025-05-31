@@ -61,20 +61,13 @@
                                             
                                         </div>
                                         <div class="col-2">
-                                            <!--<a href="#" title="Toggle Theme" id="toggle-theme">
-                                                <i class="fa-solid fa-circle-half-stroke"></i>
-                                            </a>-->
-
-                                            
-                                            
-                                            
                                             <button data-theme-toggle aria-label="Change theme" id="toggle-theme">
                                                 <i class="bi bi-brightness-high"></i>
                                             </button>
                                         </div>
                                         <div class="col-2">
                                             
-                                            <div class="dropdown">
+                                            <!--<div class="dropdown">
                                                 <a class="btn btn-secondary dropdown-toggle" id="notifications" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                     <i class="fa-regular fa-bell"></i>
                                                 </a>
@@ -84,7 +77,43 @@
                                                   <li><a class="dropdown-item" href="#">Another action</a></li>
                                                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                                                 </ul>
-                                              </div>        
+                                              </div> -->
+                                              
+                                              
+                                              <div class="d-flex justify-content-end">
+                                                <div class="dropdown">
+                                                    <button id="notifications" class="btn btn-secondary position-relative" type="button" data-bs-toggle="dropdown">
+                                                    <i class="fa-regular fa-bell"></i>
+                                                    <span
+                                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                                        id="notifCount">
+                                                        3
+                                                        <span class="visually-hidden">unread notifications</span>
+                                                    </span>
+                                                    </button>
+                                                    <ul class="dropdown-menu dropdown-menu-end shadow" id="notificationList">
+                                                    <li><h6 class="dropdown-header">Notifications</h6></li>
+                                                    <li>
+                                                        <div class="notification-item">
+                                                        New comment on your post
+                                                        <span class="notif-time">2025-05-30 14:20</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="notification-item">
+                                                        User JohnDoe followed you
+                                                        <span class="notif-time">2025-05-30 13:55</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="notification-item">
+                                                        System update available
+                                                        <span class="notif-time">2025-05-30 12:40</span>
+                                                        </div>
+                                                    </li>
+                                                    </ul>
+                                                </div>
+                                                </div>
                                             
                                             </div>
                                         <div class="col-2"><a href="" id="userImg" title="user"><img src="./assets/imgs/user.jpg" /></a></div>
@@ -625,5 +654,26 @@ else
 calendar.render();
 }
     </script>
+
+     <script>
+    // Optional: Dynamically add notification with current date/time
+    function addNotification(message) {
+      const now = new Date();
+      const timestamp = now.toISOString().slice(0, 16).replace("T", " ");
+
+      const notifList = document.getElementById("notificationList");
+      const li = document.createElement("li");
+      li.innerHTML = `
+        <div class="notification-item">
+          ${message}
+          <span class="notif-time">${timestamp}</span>
+        </div>
+      `;
+      notifList.insertBefore(li, notifList.children[1]); // Insert below header
+    }
+
+    // Example usage:
+    // addNotification("You have a new message");
+  </script>
 </body>
 </html>
